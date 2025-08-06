@@ -1,0 +1,47 @@
+{
+  "name": "astro-remove-comments",
+  "version": "0.0.1",
+  "description": "Remove comments from HTML build files in Astro",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "author": "cchiper048",
+  "license": "MIT",
+  "keywords": [
+    "astro",
+    "withastro",
+    "astro-integration",
+    "astro-component",
+    "comments"
+  ],
+  "files": [
+    "dist/**",
+    "CHANGELOG.md",
+    "README.md"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "dev": "tsc --watch --incremental",
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "astro": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/css": "^0.0.38",
+    "@types/jsdom": "^21.1.7",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "acron": "^1.0.5",
+    "astring": "^1.9.0",
+    "css": "^3.0.0",
+    "jsdom": "^26.1.0"
+  }
+}

@@ -1,0 +1,26 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<Layout title="Welcome to Astro">
+  <h1>Hello, Astro!</h1>
+  <!-- This is a test comment -->
+  <p>Some content</p>
+  <!-- Another comment -->
+
+  <script is:inline>
+    // Test script comment
+
+    /* 
+      Multiple lines
+      comment
+      test
+    */
+
+    const testValue = "//Hello";
+    console.log(testValue);
+  </script>
+</Layout>
